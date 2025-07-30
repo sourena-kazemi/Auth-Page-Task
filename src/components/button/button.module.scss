@@ -1,0 +1,15 @@
+.button {
+  font-weight: bold;
+  color: white;
+  background-color: var(--purple);
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  border-radius: 0.5rem;
+  transition: scale 300ms;
+  &:hover {
+    scale: 105%;
+  }
+  &:active {
+    scale: 95%;
+  }
+}

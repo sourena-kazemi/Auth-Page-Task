@@ -1,0 +1,70 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 36rem;
+  padding-inline: 1rem;
+  padding-block: 4rem;
+  gap: 1rem;
+
+  @media screen and (min-width: 768px) {
+    padding-block: 0;
+  }
+  .title {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      font-size: x-large;
+      font-weight: bold;
+      align-self: flex-start;
+      margin-top: 1rem;
+    }
+  }
+  .input {
+    width: 100%;
+    border: black 2px solid;
+    border-radius: 0.5rem;
+    padding-inline: 1rem;
+    padding-block: 0.2rem;
+    @media screen and (min-width: 768px) {
+      margin-top: 4rem;
+    }
+  }
+  .errorText {
+    color: #ff2056;
+  }
+  .successText {
+    color: var(--purple);
+  }
+  .button {
+    font-weight: bold;
+    color: var(--purple);
+    background-color: white;
+    border: 4px var(--purple) solid;
+    padding-inline: 2rem;
+    padding-block: 0.2rem;
+    border-radius: 0.5rem;
+    transition: all 300ms;
+    &:hover {
+      scale: 105%;
+      background-color: var(--purple);
+      color: white;
+    }
+    &:active {
+      scale: 95%;
+    }
+  }
+  .homeLink {
+    text-decoration: underline;
+    transition: color 300ms;
+    &:hover {
+      color: var(--purple);
+    }
+    @media screen and (min-width: 768px) {
+      margin-top: auto;
+    }
+  }
+}

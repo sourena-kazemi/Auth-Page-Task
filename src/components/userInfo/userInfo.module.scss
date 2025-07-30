@@ -1,0 +1,11 @@
+.text {
+  display: inline-block;
+  color: var(--purple);
+  transition: scale 300ms;
+  &:hover {
+    scale: 105%;
+  }
+  &:active {
+    scale: 95%;
+  }
+}
